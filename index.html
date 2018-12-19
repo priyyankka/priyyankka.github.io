@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<title>one</title>
+  <style type="text/css">
+    .circle
+    {
+      height:50;
+      width:50;
+      border-radius:50%;
+      border-width: 5px;
+      float:left;
+      margin:5;
+    }
+    #red
+    {
+      background-color:red;
+    }
+    #blue
+    {
+      background-color:blue;
+    }
+    #green
+    {
+      background-color:green;
+    }
+    #yellow
+    {
+      background-color:yellow;
+    }
+
+  </style>
+  </head>
+
+<body>
+  <div class ="circle" id="red" onclick="disappear()">
+  </div>
+  <div class ="circle" id="blue" onclick="disappear1()">
+  </div>
+  <div class ="circle" id="green" onclick="disappear2()">
+  </div>
+  <div class ="circle" id="yellow" onclick="disappear3()">
+  </div>
+
+
+  <script type="text/javascript">
+
+  function disappear(){
+    document.getElementById("red").style.display="none";
+  }
+  function disappear1(){
+    document.getElementById("blue").style.display="none";
+  }
+  function disappear2(){
+    document.getElementById("green").style.display="none";
+  }
+  function disappear3(){
+    document.getElementById("yellow").style.display="none";
+  }
+  </script>
+
+
+
+
+</body>
+</html>
