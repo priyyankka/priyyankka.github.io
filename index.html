@@ -33,30 +33,21 @@
   </head>
 
 <body>
-  <div class ="circle" id="red" onclick="disappear()">
+  <div class ="circle" id="red" onclick="disappear('red')">
   </div>
-  <div class ="circle" id="blue" onclick="disappear1()">
+  <div class ="circle" id="blue" onclick="disappear('blue')">
   </div>
-  <div class ="circle" id="green" onclick="disappear2()">
+  <div class ="circle" id="green" onclick="disappear('green')">
   </div>
-  <div class ="circle" id="yellow" onclick="disappear3()">
+  <div class ="circle" id="yellow" onclick="disappear('yellow')">
   </div>
 
 
   <script type="text/javascript">
+  function disappear(id){
+    document.getElementById(id).style.display="none";
+  }
 
-  function disappear(){
-    document.getElementById("red").style.display="none";
-  }
-  function disappear1(){
-    document.getElementById("blue").style.display="none";
-  }
-  function disappear2(){
-    document.getElementById("green").style.display="none";
-  }
-  function disappear3(){
-    document.getElementById("yellow").style.display="none";
-  }
   </script>
 
 
