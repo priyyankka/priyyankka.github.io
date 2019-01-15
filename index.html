@@ -31,9 +31,10 @@
 
   var to,t1,timetaken,color,letters;
   var left,top,width,height;
+  var tim=3000;
 
   var performance=window.performance;
-  setTimeout(makeshapeppear,(Math.random()*3000));
+  setTimeout(makeshapeppear,(Math.random()*tim));
 
     function makeshapeppear(){
 
@@ -70,7 +71,8 @@
 
     }
     function delay(){
-      setTimeout(makeshapeppear,(Math.random()*500));
+      setTimeout(makeshapeppear,(Math.random()*tim));
+      tim/=1.1;
     }
 
     document.getElementById("shape").onclick=function(){
@@ -78,7 +80,7 @@
       timetaken=(t1-t0)/1000;
       document.getElementById("timet").innerHTML=timetaken+" s";
       document.getElementById("shape").style.display="none";
-      if(timetaken>1){
+      if(timetaken>1.5){
         document.getElementById("toolate").innerHTML="You Lost!!";
         endloop();
 
