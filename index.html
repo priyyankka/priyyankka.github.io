@@ -72,7 +72,7 @@
     }
     function delay(){
       setTimeout(makeshapeppear,(Math.random()*tim));
-      tim/=1.1;
+      tim/=1.2;
     }
 
     document.getElementById("shape").onclick=function(){
@@ -80,7 +80,7 @@
       timetaken=(t1-t0)/1000;
       document.getElementById("timet").innerHTML=timetaken+" s";
       document.getElementById("shape").style.display="none";
-      if(timetaken>1.5){
+      if(timetaken>1.2){
         document.getElementById("toolate").innerHTML="You Lost!!";
         endloop();
 
