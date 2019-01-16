@@ -30,7 +30,7 @@
   <script type="text/javascript">
 
   var to,t1,timetaken,color,letters;
-  var left,top,width,height;
+  var left,top,screen_width,screen_height;
   var tim=2000;
 
   var performance=window.performance;
@@ -56,16 +56,16 @@
       }
       document.getElementById("shape").style.backgroundColor=color;
 
-      left=Math.random()*600+"px";
-      top=Math.random()*600+"px";
-      width=Math.random()*200+100+"px";
+      left=Math.random()*(window.innerWidth)+"px";
+      top=Math.random()*(window.innerHeight)+"px";
+      screen_width=Math.random()*200+50+"px";
 
 
       document.getElementById("shape").style.top=top;
       document.getElementById("shape").style.left=left;
-      document.getElementById("shape").style.width=width;
+      document.getElementById("shape").style.width=screen_width;
 
-      document.getElementById("shape").style.height=width;
+      document.getElementById("shape").style.height=screen_width;
       t0=performance.now();
 
 
