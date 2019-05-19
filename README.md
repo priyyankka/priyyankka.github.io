@@ -1,2 +1,0 @@
-# priyyankka.github.io
-
