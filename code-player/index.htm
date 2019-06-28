@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>
+    Code Player
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="topbar">
+    <span id="codeplayer" align="center">Code Player
+    </span>
+  </div>
+  <div id="second">
+    <div id="second-content" align="center">
+      <button id="html" class="togglebutton active">HTML</button>
+      <button id="css" class="togglebutton">CSS</button>
+      <button id="js" class="togglebutton">Javascript</button>
+      <button id="op" class="togglebutton active">Output</button>
+    </div>
+  </div>
+  <div id="third">
+    <textarea id="htmlpanel" class="panel"><p id="paragraph">PS project</p></textarea>
+    <textarea id="csspanel" class="hidden panel">p{color: green;}</textarea>
+    <textarea id="jspanel" class="hidden panel">document.getElementById("paragraph").innerHTML="PS Project";</textarea>
+    <iframe id="oppanel" class="panel"></iframe>
+  </div>
+</body>
+</html>
