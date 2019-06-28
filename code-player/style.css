@@ -1,0 +1,66 @@
+body{
+  font-family: Lucida Console, Courier, monospace;
+  background-color:#970811;
+
+  }
+#topbar{
+  margin: 0 auto;
+  background-color:#A94524;
+  height:60px;
+}
+
+#codeplayer{
+
+  color:#FAA523;
+  font-size:250%;
+  font-weight:bold;
+  font-family: cursive;
+  letter-spacing: 2.5px;
+
+}
+#second{
+  margin:auto;
+  background-color:#FAA523;
+  height:45px;
+}
+#second-content{
+  padding: 10px;
+}
+.togglebutton{
+
+  padding:2px;
+  border-color:#3D7E9A;
+  background-color:#FAA523;
+  color:#A94524;
+  font-size:120%;
+  font-weight: bold;
+}
+.highlight,.active{
+  background-color:#C1C7C9;
+
+}
+.add {
+  background-color:#E99135;
+}
+#third{
+  background-color:white;
+  margin:auto;
+}
+textarea{
+  width:50%;
+  resize:none;
+  border-top:none;
+  border-left:gray;
+  float:left;
+}
+.hidden{
+  display:none;
+}
+
+
+iframe{
+  width:50%;
+  border:none;
+  background-color:white;
+  float :left;
+}
